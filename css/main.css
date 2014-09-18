@@ -95,11 +95,12 @@ body {
 }
 
 .chart__bar {
+	display:inline-block;
   bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -2em;
 
   background-color: rgba(127, 219, 255, 0.6);
   transition: background-color 500ms linear;
@@ -125,6 +126,12 @@ body {
   opacity: 0;
 
   text-align: center;
+  transition: all 250ms linear;
+}
+
+.chart__item:hover .chart__count {
+	opacity: 1;
+	top: -6em;
 }
 
 .chart__count::after {
@@ -140,3 +147,4 @@ body {
   border-right: 10px solid transparent;
   border-top: 10px solid #000;
 }
+
