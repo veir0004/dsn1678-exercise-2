@@ -95,15 +95,16 @@ body {
 }
 
 .chart__bar {
-	display:inline-block;
   bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
-  top: -2em;
+  top: 0;
 
   background-color: rgba(127, 219, 255, 0.6);
   transition: background-color 500ms linear;
+  -webkit-animation:slide-up 300ms ease-out;
+	animation:slide-up 300ms ease-out;
 }
 
 .chart__item:hover
@@ -146,5 +147,24 @@ body {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #000;
+}
+
+@-webkit-keyframes slide-up{
+0%{
+top: 10em;
+	}
+
+100%{
+	top: 0;
+	}
+}
+@keyframes slide-up{
+0%{
+top: 10em;
+	}
+
+100%{
+	top: 0;
+	}
 }
 
