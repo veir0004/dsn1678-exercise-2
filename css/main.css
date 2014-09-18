@@ -92,6 +92,11 @@ body {
   top: 0;
 
   background-color: rgba(127, 219, 255, 0.6);
+  transition: background-color 1000ms linear;
+}
+
+.chart__bar:hover {
+	background-color:#7BE4F5;	
 }
 
 .chart__count {
